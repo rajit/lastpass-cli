@@ -1,0 +1,6 @@
+#!/bin/bash
+
+echo -n "LastPass password: "
+read -s LASTPASS_PASSWORD
+export LASTPASS_PASSWORD
+echo

@@ -1,0 +1,11 @@
+#!/bin/bash
+
+BASEPATH=$(dirname $0)
+if [ -z "$LASTPASS_PASSWORD" ]; then
+    . $BASEPATH/load-last-pass
+fi
+if [ -z "$1" ]; then
+    $BASEPATH/lastpass.rb $@
+else
+    $BASEPATH/lastpass.rb $@ | pbcopy
+fi
