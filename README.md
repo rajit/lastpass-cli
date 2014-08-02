@@ -34,7 +34,8 @@ command:
 ```
 $ . <script-path>/load-last-pass
 LastPass password:
-$                               # Password is now set in LASTPASS_PASSWORD
+$
+# Password is now set in LASTPASS_PASSWORD
 ```
 
 You can also set this environment variable yourself.  If it is not set, you will be prompted for your password, though
